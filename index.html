@@ -41,23 +41,23 @@
                   <h2>Color Picker<span>🎨</span></h2>
                   <div class="panelHelper">Click the hex code to pick another color.</div>
                   <div class="panelInner">
-                     <input class="jscolor" id="colorPicker" value="CE5937">
+                     <input class="jscolor" id="colorPicker" value="CE5937"/>
                      <div class="wrapBackgroundOpacity">
                         <div id="colorPickerOpacity">
-                           <div id="colorPickerOpacity-handle" class="ui-slider-handle"></div>
+                           <div id="colorPickerOpacity-handle"></div>
                         </div>
                      </div>
                      <div id="generatedColorCodes">
                         <div class="divTable">
                            <div class="divTableBody">
                               <div class="divTableRow">
-                                 <div class="divTableCell"><input value="color: #CE5937;"></div>
+                                 <div class="divTableCell"><input value="color: #CE5937;"/></div>
                                  <div class="divTableCell">
                                     <div id="demo1" style="color: #CE5937;">Text color</div>
                                  </div>
                               </div>
                               <div class="divTableRow">
-                                 <div class="divTableCell"><input value="background-color:#CE5937;"></div>
+                                 <div class="divTableCell"><input value="background-color:#CE5937;"/></div>
                                  <div class="divTableCell">
                                     <div id="demo2" style="background-color: #CE5937;">Background</div>
                                  </div>
@@ -69,13 +69,13 @@
                                  </div>
                               </div>
                               <div class="divTableRow">
-                                 <div class="divTableCell"><input value="text-shadow: 1px 2px 2px #CE5937;"></div>
+                                 <div class="divTableCell"><input value="text-shadow: 1px 2px 2px #CE5937;"/></div>
                                  <div class="divTableCell">
                                     <div id="demo4" style="text-shadow: 1px 2px 2px #CE5937;">Text shadow</div>
                                  </div>
                               </div>
                               <div class="divTableRow">
-                                 <div class="divTableCell"><input value="box-shadow: 2px 2px 7px 1px #CE5937;"></div>
+                                 <div class="divTableCell"><input value="box-shadow: 2px 2px 7px 1px #CE5937;"/></div>
                                  <div class="divTableCell">
                                     <div id="demo5" style="box-shadow: 2px 2px 7px 1px #CE5937;">Box shadow</div>
                                  </div>
@@ -271,7 +271,7 @@
                      <h4>Inner anchor (jump to ID)</h4>
                      <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"#footer"</span>&gt;</span>Jump to footnote<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>&gt;</span>
 <span style="color:#1c02ff">&lt;<span style="font-weight:700">br</span> /&gt;</span>
-<span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">name</span>=<span style="color:#d80800">"footer"</span>&gt;&lt;/<span style="font-weight:700">a</span>&gt;</span>Footnote content
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">name</span>=<span style="color:#d80800">"footer"</span>&gt;&lt;/<span style="font-weight:700">a</span>&gt;</span>
 </pre>
                      <h4>Bold text </h4>
                      <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">strong</span>&gt;</span>Bold text<span style="color:#1c02ff">&lt;/<span style="font-weight:700">strong</span>&gt;</span>
@@ -716,34 +716,32 @@ Disallow: /</pre>
          </div>
          <div id="wrapPreviews" class="clearfix">
             <div class="sourceEditorWrap">
-               <div class="editorHeader"><abbr title="Real-Time Source Code Editor">HTML</abbr></div>
                <div id="sourceFieldecske"></div>
                <script>
                   var sourceEditorFricc = CodeMirror(document.getElementById("sourceFieldecske"), {
-                  	value: "",
-                  	lineNumbers: true,
-                  	styleActiveLine: true,
-                  	mode: "text/html",
-                  	lineWrapping: true,
-                  	matchTags: {bothTags: true},
-                    });		
+                     value: "",
+                     lineNumbers: true,
+                     styleActiveLine: true,
+                     mode: "text/html",
+                     lineWrapping: true,
+                     matchTags: {bothTags: true},
+                  });		
                   sourceEditorFricc.on("change", function() {
-                  	inputChanged();
-                    });
+                     inputChanged();
+                  });
                </script>
             </div>
             <div class="cssEditorWrap">
-               <div class="editorHeader"><abbr title="Style Sheets">CSS</abbr></div>
                <div id="cssCodeFieldecske"></div>
                <script>
                   var cssEditorFricc = CodeMirror(document.getElementById("cssCodeFieldecske"), {
-                  	value: "",
-                  	lineNumbers: true,
-                  	styleActiveLine: true,
-                  	lineWrapping: true,
-                  	mode: "text/css",
-                  	matchTags: {bothTags: true},
-                    });
+                     value: "",
+                     lineNumbers: true,
+                     styleActiveLine: true,
+                     lineWrapping: true,
+                     mode: "text/css",
+                     matchTags: {bothTags: true},
+                  });
                </script>
             </div>
          </div>

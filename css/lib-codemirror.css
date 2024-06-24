@@ -30,7 +30,7 @@
   background-color: #f7f7f7;
   white-space: nowrap;
 }
-.CodeMirror-linenumbers {}
+
 .CodeMirror-linenumber {
   padding: 0 3px 0 5px;
   min-width: 20px;
@@ -85,8 +85,6 @@
 }
 
 /* Can style cursor different in overwrite (non-insert) mode */
-div.CodeMirror-overwrite div.CodeMirror-cursor {}
-
 .cm-tab { display: inline-block; }
 
 .CodeMirror-ruler {
@@ -100,10 +98,6 @@ div.CodeMirror-overwrite div.CodeMirror-cursor {}
 .cm-s-default .cm-atom {color: #219;}
 .cm-s-default .cm-number {color: #164;}
 .cm-s-default .cm-def {color: #00f;}
-.cm-s-default .cm-variable,
-.cm-s-default .cm-punctuation,
-.cm-s-default .cm-property,
-.cm-s-default .cm-operator {}
 .cm-s-default .cm-variable-2 {color: #05a;}
 .cm-s-default .cm-variable-3 {color: #085;}
 .cm-s-default .cm-comment {color: #a50;}
@@ -206,8 +200,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
   margin-bottom: -32px;
   display: inline-block;
   /* Hack to make IE7 behave */
-  *zoom:1;
-  *display:inline;
+  zoom:1;
+  display:inline;
 }
 .CodeMirror-gutter-elt {
   position: absolute;
@@ -253,8 +247,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
   overflow: auto;
 }
 
-.CodeMirror-widget {}
-
 .CodeMirror-wrap .CodeMirror-scroll {
   overflow-x: hidden;
 }
@@ -293,7 +285,7 @@ div.CodeMirror-cursors {
 }
 
 /* IE7 hack to prevent it from returning funny offsetTops on the spans */
-.CodeMirror span { *vertical-align: text-bottom; }
+.CodeMirror span { vertical-align: text-bottom; }
 
 /* Used to force a border model for a node */
 .cm-force-border { padding-right: .1px; }
