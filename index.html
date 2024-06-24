@@ -1,0 +1,753 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>HTML Cheat Sheet 📃 - The Best Interactive Cheat Sheet</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Online interactive HTML Cheat Sheet contains useful code examples and web developer tools, markup generators and more.">
+	<meta name="keywords" content="html,cheat,sheet">
+	<link rel="canonical" href="https://htmlcheatsheet.com/">
+	<link rel="amphtml" href="https://htmlcheatsheet.com/m/">
+	<meta property="og:title" content="HTML Cheat Sheet">
+	<meta property="og:description" content="Online interactive HTML Cheat Sheet contains useful code examples and web developer tools, markup generators and more.">
+	<meta property="og:url" content="https://htmlcheatsheet.com/">
+	<meta property="og:image" content="https://htmlcheatsheet.com/images/html-cheatsheet.jpg">
+	<meta property="og:type" content="website">
+	<link rel="icon" type="image/png" href="favicons/favicon.ico">
+	<link rel="stylesheet" href="css/doc-docs.css">
+	<link rel="stylesheet" href="css/lib-codemirror.css">
+	<script src="js/jscolor-jscolor.min.js"></script>
+	<script src="js/tinymce-tinymce.gzip.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/1.10.4-jquery-ui.js"></script>
+	<script src="js/lib-codemirror.js"></script>
+	<script src="js/fold-xml-fold.js"></script>
+	<script src="js/edit-matchtags.js"></script>
+	<script src="js/selection-active-line.js"></script>
+	<script src="js/xml-xml.js"></script>
+	<script src="js/css-css.js"></script>
+	<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+	<script src="js/2030--cheatsheet.js"></script>
+	<link rel="stylesheet" href="css/cheatsheet.css">
+	<script async="true">!function(){var t=window.location.hostname,e=document.createElement("script"),a=document.getElementsByTagName("script")[0],t="https://cmp.quantcast.com".concat("/choice/","xncav4ssEzwLp","/",t,"/choice.js?tag_version=V2"),n=0;e.async=!0,e.type="text/javascript",e.src=t,a.parentNode.insertBefore(e,a),function(){for(var t,o="__tcfapiLocator",a=[],i=window;i;){try{if(i.frames[o]){t=i;break}}catch(t){}if(i===window.top)break;i=i.parent}t||(!function t(){var e,a=i.document,n=!!i.frames[o];return n||(a.body?((e=a.createElement("iframe")).style.cssText="display:none",e.name=o,a.body.appendChild(e)):setTimeout(t,5)),!n}(),i.__tcfapi=function(){var t,e=arguments;if(!e.length)return a;"setGdprApplies"===e[0]?3<e.length&&2===e[2]&&"boolean"==typeof e[3]&&(t=e[3],"function"==typeof e[2]&&e[2]("set",!0)):"ping"===e[0]?(t={gdprApplies:t,cmpLoaded:!1,cmpStatus:"stub"},"function"==typeof e[2]&&e[2](t)):("init"===e[0]&&"object"==typeof e[3]&&(e[3]=Object.assign(e[3],{tag_version:"V2"})),a.push(e))},i.addEventListener("message",function(a){var n="string"==typeof a.data,t={};try{t=n?JSON.parse(a.data):a.data}catch(t){}var o=t.__tcfapiCall;o&&window.__tcfapi(o.command,o.version,function(t,e){e={__tcfapiReturn:{returnValue:t,success:e,callId:o.callId}};n&&(e=JSON.stringify(e)),a&&a.source&&a.source.postMessage&&a.source.postMessage(e,"*")},o.parameter)},!1))}();var o,i=function(){var t=arguments;typeof window.__uspapi!==i&&setTimeout(function(){void 0!==window.__uspapi&&window.__uspapi.apply(window.__uspapi,t)},500)};void 0===window.__uspapi&&(window.__uspapi=i,o=setInterval(function(){n++,window.__uspapi===i&&n<3?console.warn("USP is not accessible"):clearInterval(o)},6e3))}();</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-H511WG5CL2"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-H511WG5CL2');</script>
+</head>
+<body class="htmlpage">
+   <div id="pagewrap">
+      <div class="mainContent">
+         <div class="masonryPanels">
+            <div class="masonryPanelWrap">
+               <div class="masonryPanel">
+                  <h2>Color Picker<span>🎨</span></h2>
+                  <div class="panelHelper">Click the hex code to pick another color.</div>
+                  <div class="panelInner">
+                     <input class="jscolor" id="colorPicker" value="CE5937">
+                     <div class="wrapBackgroundOpacity">
+                        <div id="colorPickerOpacity">
+                           <div id="colorPickerOpacity-handle" class="ui-slider-handle"></div>
+                        </div>
+                     </div>
+                     <div id="generatedColorCodes">
+                        <div class="divTable">
+                           <div class="divTableBody">
+                              <div class="divTableRow">
+                                 <div class="divTableCell"><input value="color: #CE5937;"></div>
+                                 <div class="divTableCell">
+                                    <div id="demo1" style="color: #CE5937;">Text color</div>
+                                 </div>
+                              </div>
+                              <div class="divTableRow">
+                                 <div class="divTableCell"><input value="background-color:#CE5937;"></div>
+                                 <div class="divTableCell">
+                                    <div id="demo2" style="background-color: #CE5937;">Background</div>
+                                 </div>
+                              </div>
+                              <div class="divTableRow">
+                                 <div class="divTableCell"><input value="border: 3px solid #CE5937;"></div>
+                                 <div class="divTableCell">
+                                    <div id="demo3" style="border: 3px solid #CE5937;">Box border</div>
+                                 </div>
+                              </div>
+                              <div class="divTableRow">
+                                 <div class="divTableCell"><input value="text-shadow: 1px 2px 2px #CE5937;"></div>
+                                 <div class="divTableCell">
+                                    <div id="demo4" style="text-shadow: 1px 2px 2px #CE5937;">Text shadow</div>
+                                 </div>
+                              </div>
+                              <div class="divTableRow">
+                                 <div class="divTableCell"><input value="box-shadow: 2px 2px 7px 1px #CE5937;"></div>
+                                 <div class="divTableCell">
+                                    <div id="demo5" style="box-shadow: 2px 2px 7px 1px #CE5937;">Box shadow</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="masonryPanelWrap">
+               <div class="masonryPanel">
+                  <h2>Characters<span>🈚</span></h2>
+                  <div class="panelHelper">Hover the character and click to select one. </div>
+                  <div class="panelInner">
+                     <div class="wrapCharCodes">
+                        <div class="charactercodes">
+                           <div title="non-breaking space">nbsp</div>
+                           <div title="acute">aacute</div>
+                           <div title="grave">agrave</div>
+                           <div title="circ">acirc</div>
+                           <div title="umlaut">auml</div>
+                           <div title="tilde">atilde</div>
+                           <div title="ring">aring</div>
+                           <div title="ampersand">amp</div>
+                           <div title="less than">lt</div>
+                           <div title="greater than">gt</div>
+                           <div title="double quotation mark">quot</div>
+                           <div title="single quotation mark (apostrophe)">apos</div>
+                           <div title="single left-pointing angle quotation mark">lsaquo</div>
+                           <div title="single right-pointing angle quotation mark">rsaquo</div>
+                           <div title="double left-pointing angle quotation mark">laquo</div>
+                           <div title="double right-pointing angle quotation mark">raquo</div>
+                           <div title="right pointing index">#9758</div>
+                           <div title="dollar sign">dollar</div>
+                           <div title="cent">cent</div>
+                           <div title="pound">pound</div>
+                           <div title="yen">yen</div>
+                           <div title="euro">euro</div>
+                           <div title="indian rupee sign">#x20B9</div>
+                           <div title="ruble sign">#x20BD</div>
+                           <div title="yuan character, in china">#x5143</div>
+                           <div title="copyright">copy</div>
+                           <div title="registered trademark">reg</div>
+                           <div title="umbrella with rain drops">#9748</div>
+                           <div title="hot beverage">#9749</div>
+                           <div title="person with ball">#9977</div>
+                           <div title="snowman">#9924</div>
+                           <div title="skull and crossbones">#9760</div>
+                           <div title="radioactive">#9762</div>
+                           <div title="black spade suit">spades</div>
+                           <div title="black club suit">clubs</div>
+                           <div title="black heart suit">hearts</div>
+                           <div title="black diamond suit">diams</div>
+                           <div title="Black Up-Pointing Triangle">#9650</div>
+                           <div title="White Up-Pointing Triangle">#9651</div>
+                           <div title="Large Circle">#9711</div>
+                           <div title="Black Medium Square">#9724</div>
+                           <div title="section">sect</div>
+                           <div title="paragraph">para</div>
+                           <div title="black telephone">phone</div>
+                           <div title="ballot box">#9744</div>
+                           <div title="ballot box with check">#9745</div>
+                           <div title="ballot box with x">#9746</div>
+                           <div title="check mark">#10004</div>
+                           <div title="ballot x">#10008</div>
+                           <div title="smiling face">#9786</div>
+                           <div title="smiling face 2">#9787</div>
+                           <div title="eight notes">#9834</div>
+                           <div title="beamed eight notes">#9835</div>
+                           <div title="white flag">#9872</div>
+                           <div title="envelope">#9993</div>
+                           <div title="pencil">#9998</div>
+                           <div title="sun">#9728</div>
+                           <div title="star">#10032</div>
+                           <div title="black star">#9733</div>
+                           <div title="quotation mark ornament">#10077</div>
+                           <div title="quotation mark ornament end">#10078</div>
+                           <div title="heart">#10084</div>
+                           <div title="dagger">dagger</div>
+                           <div title="right arrowhead">#10148</div>
+                           <div title="squat black right arrow">#10151</div>
+                           <div title="left arrow">larr</div>
+                           <div title="up arrow">uarr</div>
+                           <div title="right arrow">rarr</div>
+                           <div title="down arrow">darr</div>
+                           <div title="north west arrow">nwarr</div>
+                           <div title="north east arrow">nearr</div>
+                           <div title="south east arrow">searr</div>
+                           <div title="south west arrow">swarr</div>
+                           <div title="trade mark sign">trade</div>
+                           <div title="at symbol">commat</div>
+                           <div title="check mark">check</div>
+                           <div title="degree celsius">#x2103</div>
+                           <div title="degree fahrenheit">#x2109</div>
+                           <div title="plus sign">plus</div>
+                           <div title="multiplication sign">times</div>
+                           <div title="division sign">divide</div>
+                           <div title="equal sign">equals</div>
+                           <div title="not equal to sign">ne</div>
+                           <div title="fraction one quarter">frac14</div>
+                           <div title="fraction one half">frac12</div>
+                           <div title="fraction three quarters">frac34</div>
+                           <div title="vulgar fraction one third">frac13</div>
+                           <div title="vulgar fraction two thirds">frac23</div>
+                           <div title="exclamation mark">excl</div>
+                           <div title="question mark">quest</div>
+                           <div title="en dash">ndash</div>
+                           <div title="em dash">mdash</div>
+                           <div title="sum">#8512</div>
+                           <div title="ohm">#8486</div>
+                           <div title="information source">#8505</div>
+                           <div title="numero">#8470</div>
+                           <div title="medium white circle">#9898</div>
+                           <div title="Smiley">#128578</div>
+                           <div title="Smiley face">#128512</div>
+                           <div title="Smiley face">#128522</div>
+                           <div title="Sad face">#128532</div>
+                           <div title="Clouds, Sun, Rain">#127782</div>
+                           <div title="Moon">#127772</div>
+                           <div title="Flower">#127803</div>
+                           <div title="Doughnut">#127849</div>
+                           <div title="Beer">#127867</div>
+                           <div title="Hamburger">#127828</div>
+                           <div title="Theatre">#127917</div>
+                           <div title="Swimmer">#127946</div>
+                           <div title="Camping">#127957</div>
+                           <div title="Donkey">#128053</div>
+                           <div title="Wolf">#128058</div>
+                           <div title="Paws">#128062</div>
+                           <div title="Eyes">#128064</div>
+                           <div title="Thumbs up">#128077</div>
+                           <div title="Thumbs down">#128078</div>
+                           <div title="Kid">#128102</div>
+                           <div title="Family">#128106</div>
+                           <div title="Couple">#128107</div>
+                           <div title="Skull">#128128</div>
+                           <div title="Heartbreak">#128148</div>
+                           <div title="Poop">#128169</div>
+                           <div title="Biceps">#128170</div>
+                           <div title="Money bag">#128176</div>
+                           <div title="Floppy disk">#128190</div>
+                           <div title="Folder">#128193</div>
+                           <div title="Pin">#128204</div>
+                           <div title="Key">#128273</div>
+                           <div title="Revolver">#128299</div>
+                           <div title="Road block">#128679</div>
+                           <div title="Tools">#128736</div>
+                           <div title="Shop">#128722</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="masonryPanelWrap">
+               <div class="masonryPanel">
+                  <h2>Tags<span>🏷</span></h2>
+                  <div class="panelHelper">Samples of the most common tags. </div>
+                  <div class="panelInner">
+                     <h4>Div Section</h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">div</span>&gt;</span>Block element<span style="color:#1c02ff">&lt;/<span style="font-weight:700">div</span>&gt;</span>
+</pre>
+                     <h4>Headings</h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">h</span>1&gt;</span>Page title<span style="color:#1c02ff">&lt;/<span style="font-weight:700">h</span>1&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">h</span>2&gt;</span>Subheading<span style="color:#1c02ff">&lt;/<span style="font-weight:700">h</span>2&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">h</span>3&gt;</span>Sub subheading<span style="color:#1c02ff">&lt;/<span style="font-weight:700">h</span>3&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">h</span>4&gt;</span>Quaternary heading<span style="color:#1c02ff">&lt;/<span style="font-weight:700">h</span>4&gt;</span>
+</pre>
+                     <h4>Paragraph with style</h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">p</span> <span style="font-style:italic">style</span>=<span style="color:#d80800">"text-align: center;"</span>&gt;</span>text<span style="color:#1c02ff">&lt;/<span style="font-weight:700">p</span>&gt;</span>
+</pre>
+                     <h4>Image </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">img</span> <span style="font-style:italic">src</span>=<span style="color:#d80800">"/demo.jpg"</span> <span style="font-style:italic">alt</span>=<span style="color:#d80800">"description"</span> <span style="font-style:italic">height</span>=<span style="color:#d80800">"48"</span> <span style="font-style:italic">width</span>=<span style="color:#d80800">"100"</span>&gt;</span>
+</pre>
+                     <h4>Text Links (to Our Sponsors)</h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"https://html6.com/"</span> <span style="font-style:italic">target</span>=<span style="color:#d80800">"_blank"</span> <span style="font-style:italic">rel</span>=<span style="color:#d80800">"nofollow"</span>&gt;</span>
+  Click here<span style="color:#1c02ff">
+&lt;/<span style="font-weight:700">a</span>&gt;</span>
+</pre>
+                     <h4>Image Link </h4>
+                     <p class="aligncenter"><a href="https://htmlforbabies.com/" target="_blank" rel="external nofollow"> <img src="images/images-html-for-babies.jpg" alt="HTML for babies" width="160" height="146"><br>HTML For Babies </a></p>
+                     <pre style="color:#1c02ff">
+<span style="color:#1c02ff; ">&lt;</span>a href<span style="color:#1c02ff; ">=</span><span style="color:#800000; ">"</span><span style="color:#d80800; ">https://HTMLforBabies.com/</span><span style="color:#800000; ">"</span>
+   target<span style="color:#1c02ff; ">=</span><span style="color:#800000; ">"</span><span style="color:#d80800; ">_blank</span><span style="color:#800000; ">"</span> rel<span style="color:#1c02ff; ">=</span><span style="color:#800000; ">"</span><span style="color:#d80800; ">external nofollow</span><span style="color:#800000; ">"</span><span style="color:#1c02ff; ">&gt;</span>
+      <span style="color:#1c02ff; ">&lt;</span>img src<span style="color:#1c02ff; ">=</span><span style="color:#800000; ">"</span><span style="color:#d80800; ">/demo.jpg</span><span style="color:#800000; ">"</span> alt<span style="color:#1c02ff; ">=</span><span style="color:#800000; ">"</span><span style="color:#d80800; ">baby</span><span style="color:#800000; ">"</span>
+           width<span style="color:#1c02ff; ">=</span><span style="color:#800000; ">"</span><span style="color:#d80800; ">100</span><span style="color:#800000; ">"</span> height<span style="color:#1c02ff; ">=</span><span style="color:#800000; ">"</span><span style="color:#d80800; ">48</span><span style="color:#800000; ">"</span> <span style="color:#1c02ff; ">/</span><span style="color:#1c02ff; ">&gt;</span><span style="color:#1c02ff; ">&lt;</span>br <span style="color:#1c02ff; ">/</span><span style="color:#1c02ff; ">&gt;</span>
+      HTML For Babies
+<span style="color:#1c02ff; ">&lt;</span><span style="color:#1c02ff; ">/</span>a<span style="color:#1c02ff; ">&gt;</span>
+</pre>
+                     <h4>Mailto link </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"mailto:me@ruwix.com?Subject=Hi%20mate"</span> <span style="font-style:italic">target</span>=<span style="color:#d80800">"_top"</span>&gt;</span>Send Mail<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>&gt;</span>
+</pre>
+                     <h4>Inner anchor (jump to ID)</h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"#footer"</span>&gt;</span>Jump to footnote<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">br</span> /&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">name</span>=<span style="color:#d80800">"footer"</span>&gt;&lt;/<span style="font-weight:700">a</span>&gt;</span>Footnote content
+</pre>
+                     <h4>Bold text </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">strong</span>&gt;</span>Bold text<span style="color:#1c02ff">&lt;/<span style="font-weight:700">strong</span>&gt;</span>
+</pre>
+                     <h4>Italic text </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">em</span>&gt;</span>Italic text<span style="color:#1c02ff">&lt;/<span style="font-weight:700">em</span>&gt;</span>
+</pre>
+                     <h4>Underlined text </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">span</span> <span style="font-style:italic">style</span>=<span style="color:#d80800">"text-decoration: underline;"</span>&gt;</span>Underlined text<span style="color:#1c02ff">&lt;/<span style="font-weight:700">span</span>&gt;</span>
+</pre>
+                     <h4>Iframe </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">iframe</span> <span style="font-style:italic">src</span>=<span style="color:#d80800">"link.html"</span> <span style="font-style:italic">width</span>=<span style="color:#d80800">"200"</span> <span style="font-style:italic">height</span>=<span style="color:#d80800">"200"</span>&gt;</span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">iframe</span>&gt;</span> 
+</pre>
+                     <h4>Abbreviation </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">abbr</span> <span style="font-style:italic">title</span>=<span style="color:#d80800">"Hypertext Markup Language"</span>&gt;</span>HTML<span style="color:#1c02ff">&lt;/<span style="font-weight:700">abbr</span>&gt;</span>
+</pre>
+                     <h4>Comment</h4>
+                     <pre style="color:#000"><span style="color:#00b418">&lt;!-- HTML
+Comment --&gt;</span>
+</pre>
+                     <h4>Horizontal Line </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">hr</span> /&gt;</span>
+</pre>
+                     <h4>Line break </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">br</span> /&gt;</span>
+</pre>
+                     <h4>Quotation </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">q</span>&gt;</span>Success is a journey not a destination.<span style="color:#1c02ff">&lt;/<span style="font-weight:700">q</span>&gt;</span>
+</pre>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">blockquote</span> <span style="font-style:italic">cite</span>=<span style="color:#d80800">"https://ruwix.com/"</span>&gt;</span>
+The Rubik's Cube is the World’s best selling puzzle toy.
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">blockquote</span>&gt;</span> 
+</pre>
+                     <h4>Video </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">video</span> <span style="font-style:italic">width</span>=<span style="color:#d80800">"200"</span> <span style="font-style:italic">height</span>=<span style="color:#d80800">"150"</span> <span style="font-style:italic">controls</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">source</span> <span style="font-style:italic">src</span>=<span style="color:#d80800">"vid.mp4"</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"video/mp4"</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">source</span> <span style="font-style:italic">src</span>=<span style="color:#d80800">"vid.ogg"</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"video/ogg"</span>&gt;</span>
+  No video support.
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">video</span>&gt;</span>
+</pre>
+                     <h4>Audio</h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">audio</span> <span style="font-style:italic">controls</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">source</span> <span style="font-style:italic">src</span>=<span style="color:#d80800">"sound.ogg"</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"audio/ogg"</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">source</span> <span style="font-style:italic">src</span>=<span style="color:#d80800">"sound.mp3"</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"audio/mpeg"</span>&gt;</span>
+  No audio support.
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">audio</span>&gt;</span> 
+</pre>
+                  </div>
+               </div>
+            </div>
+            <div class="masonryPanelWrap">
+               <div class="masonryPanel">
+                  <h2>Structures<span>🏗</span></h2>
+                  <div class="panelHelper">HTML tag structures</div>
+                  <div class="panelInner">
+                     <h4>Table </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">table</span>&gt;</span><span style="color:#1c02ff">&lt;<span style="font-weight:700">caption</span>&gt;</span>Phone numbers<span style="color:#1c02ff">&lt;/<span style="font-weight:700">caption</span>&gt;</span>
+ <span style="color:#1c02ff">&lt;<span style="font-weight:700">thead</span>&gt;</span>
+   <span style="color:#1c02ff">&lt;<span style="font-weight:700">tr</span>&gt;</span>
+	<span style="color:#1c02ff">&lt;<span style="font-weight:700">th</span>&gt;</span>Name<span style="color:#1c02ff">&lt;/<span style="font-weight:700">th</span>&gt;</span>
+	<span style="color:#1c02ff">&lt;<span style="font-weight:700">th</span> <span style="font-style:italic">colspan</span>=<span style="color:#d80800">"2"</span>&gt;</span>Phone<span style="color:#1c02ff">&lt;/<span style="font-weight:700">th</span>&gt;</span>
+   <span style="color:#1c02ff">&lt;/<span style="font-weight:700">tr</span>&gt;</span>
+ <span style="color:#1c02ff">&lt;/<span style="font-weight:700">thead</span>&gt;</span>
+ <span style="color:#1c02ff">&lt;<span style="font-weight:700">tbody</span>&gt;</span>
+   <span style="color:#1c02ff">&lt;<span style="font-weight:700">tr</span>&gt;</span>
+	<span style="color:#1c02ff">&lt;<span style="font-weight:700">td</span>&gt;</span>John<span style="color:#1c02ff">&lt;/<span style="font-weight:700">td</span>&gt;</span>
+	<span style="color:#1c02ff">&lt;<span style="font-weight:700">td</span>&gt;</span>577854<span style="color:#1c02ff">&lt;/<span style="font-weight:700">td</span>&gt;</span>
+	<span style="color:#1c02ff">&lt;<span style="font-weight:700">td</span>&gt;</span>577855<span style="color:#1c02ff">&lt;/<span style="font-weight:700">td</span>&gt;</span>
+   <span style="color:#1c02ff">&lt;/<span style="font-weight:700">tr</span>&gt;</span>
+   <span style="color:#1c02ff">&lt;<span style="font-weight:700">tr</span>&gt;</span>
+	<span style="color:#1c02ff">&lt;<span style="font-weight:700">td</span>&gt;</span>Jack<span style="color:#1c02ff">&lt;/<span style="font-weight:700">td</span>&gt;</span>
+	<span style="color:#1c02ff">&lt;<span style="font-weight:700">td</span>&gt;</span>577856<span style="color:#1c02ff">&lt;/<span style="font-weight:700">td</span>&gt;</span>
+	<span style="color:#1c02ff">&lt;<span style="font-weight:700">td</span>&gt;</span>577857<span style="color:#1c02ff">&lt;/<span style="font-weight:700">td</span>&gt;</span>
+   <span style="color:#1c02ff">&lt;/<span style="font-weight:700">tr</span>&gt;</span>
+ <span style="color:#1c02ff">&lt;/<span style="font-weight:700">tbody</span>&gt;</span>
+ <span style="color:#1c02ff">&lt;<span style="font-weight:700">tfoot</span>&gt;</span>
+   <span style="color:#1c02ff">&lt;<span style="font-weight:700">tr</span>&gt;</span>
+	<span style="color:#1c02ff">&lt;<span style="font-weight:700">td</span>&gt;</span><span style="color:#c5060b;font-style:italic">&amp;nbsp;</span><span style="color:#1c02ff">&lt;/<span style="font-weight:700">td</span>&gt;</span>
+	<span style="color:#1c02ff">&lt;<span style="font-weight:700">td</span>&gt;</span>Personal<span style="color:#1c02ff">&lt;/<span style="font-weight:700">td</span>&gt;</span>
+	<span style="color:#1c02ff">&lt;<span style="font-weight:700">td</span>&gt;</span>Office<span style="color:#1c02ff">&lt;/<span style="font-weight:700">td</span>&gt;</span>
+   <span style="color:#1c02ff">&lt;/<span style="font-weight:700">tr</span>&gt;</span>
+ <span style="color:#1c02ff">&lt;/<span style="font-weight:700">tfoot</span>&gt;</span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">table</span>&gt;</span>
+</pre>
+                     <h4>Unordered list</h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">ul</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">li</span>&gt;</span>First<span style="color:#1c02ff">&lt;/<span style="font-weight:700">li</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">li</span>&gt;</span>Second<span style="color:#1c02ff">&lt;/<span style="font-weight:700">li</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">li</span>&gt;</span>Third<span style="color:#1c02ff">&lt;/<span style="font-weight:700">li</span>&gt;</span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">ul</span>&gt;</span>
+</pre>
+                     <h4>Definition list </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">dl</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">dt</span>&gt;</span>HTML<span style="color:#1c02ff">&lt;/<span style="font-weight:700">dt</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">dd</span>&gt;</span>Hypertext Markup Language<span style="color:#1c02ff">&lt;/<span style="font-weight:700">dd</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">dt</span>&gt;</span>CSS<span style="color:#1c02ff">&lt;/<span style="font-weight:700">dt</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">dd</span>&gt;</span>Cascading Style Sheets <span style="color:#1c02ff">&lt;/<span style="font-weight:700">dd</span>&gt;</span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">dl</span>&gt;</span>
+</pre>
+                     <h4>Form</h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">form</span> <span style="font-style:italic">action</span>=<span style="color:#d80800">"/action.php"</span> <span style="font-style:italic">method</span>=<span style="color:#d80800">"post"</span>&gt;</span>
+  Name: <span style="color:#1c02ff">&lt;<span style="font-weight:700">input</span> <span style="font-style:italic">name</span>=<span style="color:#d80800">"name"</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"text"</span> /&gt;</span> <span style="color:#1c02ff">&lt;<span style="font-weight:700">br</span> /&gt;</span> 
+  Age: <span style="color:#1c02ff">&lt;<span style="font-weight:700">input</span> <span style="font-style:italic">max</span>=<span style="color:#d80800">"99"</span> <span style="font-style:italic">min</span>=<span style="color:#d80800">"1"</span> <span style="font-style:italic">name</span>=<span style="color:#d80800">"age"</span> <span style="font-style:italic">step</span>=<span style="color:#d80800">"1"</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"number"</span> <span style="font-style:italic">value</span>=<span style="color:#d80800">"18"</span> /&gt;</span> <span style="color:#1c02ff">&lt;<span style="font-weight:700">br</span> /&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">select</span> <span style="font-style:italic">name</span>=<span style="color:#d80800">"gender"</span>&gt;</span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">option</span> <span style="font-style:italic">selected</span>=<span style="color:#d80800">"selected"</span> <span style="font-style:italic">value</span>=<span style="color:#d80800">"male"</span>&gt;</span>Male<span style="color:#1c02ff">&lt;/<span style="font-weight:700">option</span>&gt;</span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">option</span> <span style="font-style:italic">value</span>=<span style="color:#d80800">"female"</span>&gt;</span>Female<span style="color:#1c02ff">&lt;/<span style="font-weight:700">option</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;/<span style="font-weight:700">select</span>&gt;</span><span style="color:#1c02ff">&lt;<span style="font-weight:700">br</span> /&gt;</span> 
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">input</span> <span style="font-style:italic">checked</span>=<span style="color:#d80800">"checked"</span> <span style="font-style:italic">name</span>=<span style="color:#d80800">"newsletter"</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"radio"</span> <span style="font-style:italic">value</span>=<span style="color:#d80800">"daily"</span> /&gt;</span> Daily <span style="color:#1c02ff">&lt;<span style="font-weight:700">input</span> <span style="font-style:italic">name</span>=<span style="color:#d80800">"newsletter"</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"radio"</span> <span style="font-style:italic">value</span>=<span style="color:#d80800">"weekly"</span> /&gt;</span> Weekly<span style="color:#1c02ff">&lt;<span style="font-weight:700">br</span> /&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">textarea</span> <span style="font-style:italic">cols</span>=<span style="color:#d80800">"20"</span> <span style="font-style:italic">name</span>=<span style="color:#d80800">"comments"</span> <span style="font-style:italic">rows</span>=<span style="color:#d80800">"5"</span>&gt;</span>Comment<span style="color:#1c02ff">&lt;/<span style="font-weight:700">textarea</span>&gt;</span><span style="color:#1c02ff">&lt;<span style="font-weight:700">br</span> /&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">label</span>&gt;</span><span style="color:#1c02ff">&lt;<span style="font-weight:700">input</span> <span style="font-style:italic">name</span>=<span style="color:#d80800">"terms"</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"checkbox"</span> <span style="font-style:italic">value</span>=<span style="color:#d80800">"tandc"</span> /&gt;</span>Accept terms<span style="color:#1c02ff">&lt;/<span style="font-weight:700">label</span>&gt;</span> <span style="color:#1c02ff">&lt;<span style="font-weight:700">br</span> /&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">input</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"submit"</span> <span style="font-style:italic">value</span>=<span style="color:#d80800">"Submit"</span> /&gt;</span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">form</span>&gt;</span>
+</pre>
+                  </div>
+               </div>
+            </div>
+            <div class="masonryPanelWrap">
+               <div class="masonryPanel">
+                  <h2>Attributes<span>💅</span></h2>
+                  <div class="panelHelper">List of HTML tag attributes. </div>
+                  <div class="panelInner">
+                     <h4>SYNTAX</h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">tag</span> <span style="font-style:italic">attributename</span>=<span style="color:#d80800">"value"</span> /&gt;</span>
+</pre>
+                     - lowecase attributes, quote values
+                     <h4>Global attributes</h4>
+                     accesskey, class, contenteditable, data-*, dir, draggable, hidden, id, lang, spellcheck, style, tabindex, title
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">div</span> <span style="font-style:italic">id</span>=<span style="color:#d80800">"demo"</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"big"</span> <span style="font-style:italic">dir</span>=<span style="color:#d80800">"ltr"</span> <span style="font-style:italic">lang</span>=<span style="color:#d80800">"en"</span> 
+  <span style="font-style:italic">style</span>=<span style="color:#d80800">"color: red;"</span> <span style="font-style:italic">tabindex</span>=<span style="color:#d80800">"0"</span> <span style="font-style:italic">title</span>=<span style="color:#d80800">"Tooltip"</span> 
+  <span style="font-style:italic">contenteditable</span>=<span style="color:#d80800">"true"</span> <span style="font-style:italic">spellcheck</span>=<span style="color:#d80800">"true"</span> 
+  <span style="font-style:italic">data-htmlcheat</span>=<span style="color:#d80800">"99"</span>&gt;</span>Hello World!<br><span style="color:#1c02ff">&lt;/<span style="font-weight:700">div</span>&gt;</span>
+</pre>
+                     <h4><span>Internationalization:</span> dir, lang, xml:lang </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">html</span> <span style="font-style:italic">lang</span>=<span style="color:#d80800">"en-US"</span>&gt;</span>
+...
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">p</span> <span style="font-style:italic">dir</span>=<span style="color:#d80800">"rtl"</span>&gt;</span>Right to left (Arabic)<span style="color:#1c02ff">&lt;/<span style="font-weight:700">p</span>&gt;</span> 
+...
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">html</span>&gt;</span>
+</pre>
+                     <h4><span>Link:</span> download, href, hreflang, media, rel, target, type </h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"https://html6.com/"</span> <span style="font-style:italic">target</span>=<span style="color:#d80800">"_blank"</span> <span style="font-style:italic">rel</span>=<span style="color:#d80800">"external"</span> <span style="font-style:italic">hreflang</span>=<span style="color:#d80800">"en"</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"text/html"</span>&gt;</span>
+Link
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>&gt;</span>
+</pre>
+                     <h4><span>Image:</span> src, alt, height, ismap, longdesc, src, srcset, usemap, width</h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">img</span> <span style="font-style:italic">src</span>=<span style="color:#d80800">"/demo.jpg"</span> <span style="font-style:italic">alt</span>=<span style="color:#d80800">"description"</span> 
+<span style="font-style:italic">height</span>=<span style="color:#d80800">"48"</span> <span style="font-style:italic">width</span>=<span style="color:#d80800">"100"</span> <span style="font-style:italic">longdesc</span>=<span style="color:#d80800">"desc.txt"</span> /&gt;</span>
+</pre>
+                     <h4>All attributes</h4>
+                     <div class="descriptionListing">
+                        <div><span title="List of types the server accepts, typically a file type.">accept</span><em>form, input</em></div>
+                        <div><span title="List of supported charsets.">accept-charset</span><em>form</em></div>
+                        <div><span title="Defines a keyboard shortcut to activate or add focus to the element.">accesskey</span><em>Global attribute</em></div>
+                        <div><span title="The URI of a program that processes the information submitted via the form.">action</span><em>form</em></div>
+                        <div><span title="Specifies the horizontal alignment of the element.">align</span><em>applet, caption, col, colgroup, hr, iframe, img, table, tbody, td, tfoot , th, thead, tr</em></div>
+                        <div><span title="Alternative text in case an image can't be displayed.">alt</span><em>applet, area, img, input</em></div>
+                        <div><span title="Indicates that the script should be executed asynchronously.">async</span><em>script</em></div>
+                        <div><span title="Indicates whether controls in this form can by default have their values automatically completed by the browser.">autocomplete</span><em>form, input</em></div>
+                        <div><span title="The element should be automatically focused after the page loaded.">autofocus</span><em>button, input, keygen, select, textarea</em></div>
+                        <div><span title="The audio or video should play as soon as possible.">autoplay</span><em>audio, video</em></div>
+                        <div><span title="Previous values should persist dropdowns of selectable values across page loads.">autosave</span><em>input</em></div>
+                        <div><span title="">bgcolor</span><em>body, col, colgroup, marquee, table, tbody, tfoot, td, th, tr</em></div>
+                        <div><span title="Contains the time range of already buffered media.">buffered</span><em>audio, video</em></div>
+                        <div><span title="A challenge string that is submitted along with the public key.">challenge</span><em>keygen</em></div>
+                        <div><span title="Declares the character encoding of the page or script.">charset</span><em>meta, script</em></div>
+                        <div><span title="Indicates whether the element should be checked on page load.">checked</span><em>command, input</em></div>
+                        <div><span title="Contains a URI which points to the source of the quote or change.">cite</span><em>blockquote, del, ins, q</em></div>
+                        <div><span title="Often used with CSS to style elements with common properties.">class</span><em>Global attribute</em></div>
+                        <div><span title="Specifies the URL of the applet's class file to be loaded and executed.">code</span><em>applet</em></div>
+                        <div><span title="Gives the absolute or relative URL of the directory where applets' .class files referenced by the code attribute are stored.">codebase</span><em>applet</em></div>
+                        <div><span title="This attribute sets the text color using either a named color or a color specified in the hexadecimal format. Note: This is a legacy attribute, use the CSS color property instead.">color</span><em>basefont, font, hr</em></div>
+                        <div><span title="Defines the number of columns in a textarea.">cols</span><em>textarea</em></div>
+                        <div><span title="The colspan attribute defines the number of columns a cell should span.">colspan</span><em>td, th</em></div>
+                        <div><span title="A value associated with http-equiv or name depending on the context.">content</span><em>meta</em></div>
+                        <div><span title="Indicates whether the element's content is editable.">contenteditable</span><em>Global attribute</em></div>
+                        <div><span title="Defines the ID of a &lt;menu&gt; element which will serve as the element's context menu.">contextmenu</span><em>Global attribute</em></div>
+                        <div><span title="Indicates whether the browser should show playback controls to the user.">controls</span><em>audio, video</em></div>
+                        <div><span title="A set of values specifying the coordinates of the hot-spot region.">coords</span><em>area</em></div>
+                        <div><span title="Specifies the URL of the resource.">data</span><em>object</em></div>
+                        <div><span title="Lets you attach custom attributes to an HTML element.">data-*</span><em>Global attribute</em></div>
+                        <div><span title="Indicates the date and time associated with the element.">datetime</span><em>del, ins, time</em></div>
+                        <div><span title="Indicates that the track should be enabled unless the user's preferences indicate something different.">default</span><em>track</em></div>
+                        <div><span title="Indicates that the script should be executed after the page has been parsed.">defer</span><em>script</em></div>
+                        <div><span title="Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)">dir</span><em>Global attribute</em></div>
+                        <div><span title="An HTML form where the fields text direction will be submitted">dirname</span><em>input, textarea</em></div>
+                        <div><span title="Indicates whether the user can interact with the element.">disabled</span><em>button, command, fieldset, input, keygen, optgroup, option, select, textarea</em></div>
+                        <div><span title="Indicates that the hyperlink is to be used for downloading a resource.">download</span><em>a, area</em></div>
+                        <div><span title="Defines whether the element can be dragged.">draggable</span><em>Global attribute</em></div>
+                        <div><span title="Indicates that the element accept the dropping of content on it.">dropzone</span><em>Global attribute</em></div>
+                        <div><span title="Defines the content type of the form date when the method is POST.">enctype</span><em>form</em></div>
+                        <div><span title="Describes elements which belongs to this one.">for</span><em>label, output</em></div>
+                        <div><span title="Indicates the form that is the owner of the element.">form</span><em>button, fieldset, input, keygen, label, meter, object, output, progress, select, textarea</em></div>
+                        <div><span title="Indicates the action of the element, overriding the action defined in the &lt;form&gt;.">formaction</span><em>input, button</em></div>
+                        <div><span title="IDs of the &lt;th&gt; elements which applies to this element.">headers</span><em>td, th</em></div>
+                        <div><span title="Specifies the height of elements listed here. For all other elements, use the CSS height property. Note: In some instances, such as DIV, this is a legacy attribute, in which case the CSS height property should be used instead.">height</span><em>canvas, embed, iframe, img, input, object, video</em></div>
+                        <div><span title="Prevents rendering of given element, while keeping child elements, e.g. script elements, active.">hidden</span><em>Global attribute</em></div>
+                        <div><span title="Indicates the lower bound of the upper range.">high</span><em>meter</em></div>
+                        <div><span title="The URL of a linked resource.">href</span><em>a, area, base, link</em></div>
+                        <div><span title="Specifies the language of the linked resource.">hreflang</span><em>a, area, link</em></div>
+                        <div><span title="Provides an HTTP header for the information/value of the content attribute.">http-equiv</span><em>meta</em></div>
+                        <div><span title="Specifies a picture which represents the command.">icon</span><em>command</em></div>
+                        <div><span title="Often used with CSS to style a specific element. The value of this attribute must be unique.">id</span><em>Global attribute</em></div>
+                        <div><span title="">integrity</span><em>link, script</em></div>
+                        <div><span title="Indicates that the image is part of a server-side image map.">ismap</span><em>img</em></div>
+                        <div><span title="Add properties to an item">itemprop</span><em>Global attribute</em></div>
+                        <div><span title="Specifies the type of key generated.">keytype</span><em>keygen</em></div>
+                        <div><span title="Specifies the kind of text track.">kind</span><em>track</em></div>
+                        <div><span title="Specifies a user-readable title of the text track.">label</span><em>track</em></div>
+                        <div><span title="Defines the language used in the element.">lang</span><em>Global attribute</em></div>
+                        <div><span title="Defines the script language used in the element.">language</span><em>script</em></div>
+                        <div><span title="Identifies a list of pre-defined options to suggest to the user.">list</span><em>input</em></div>
+                        <div><span title="Indicates whether the media should start playing from the start when it's finished.">loop</span><em>audio, bgsound, marquee, video</em></div>
+                        <div><span title="Indicates the upper bound of the lower range.">low</span><em>meter</em></div>
+                        <div><span title="Specifies the URL of the document's cache manifest.">manifest</span><em>html</em></div>
+                        <div><span title="Indicates the maximum value allowed.">max</span><em>input, meter, progress</em></div>
+                        <div><span title="Defines the maximum number of characters allowed in the element.">maxlength</span><em>input, textarea</em></div>
+                        <div><span title="Specifies a hint of the media for which the linked resource was designed.">media</span><em>a, area, link, source, style</em></div>
+                        <div><span title="Defines which HTTP method to use when submitting the form. Can be GET (default) or POST.">method</span><em>form</em></div>
+                        <div><span title="Indicates the minimum value allowed.">min</span><em>input, meter</em></div>
+                        <div><span title="Indicates whether multiple values can be entered in an input of the type email or file.">multiple</span><em>input, select</em></div>
+                        <div><span title="Indicates whether the audio will be initially silenced on page load.">muted</span><em>video</em></div>
+                        <div><span title="Name of the element. For example used by the server to identify the fields in form submits.">name</span><em>button, form, fieldset, iframe, input, keygen, object, output, select, textarea, map, meta, param</em></div>
+                        <div><span title="This attribute indicates that the form shouldn't be validated when submitted.">novalidate</span><em>form</em></div>
+                        <div><span title="Indicates whether the details will be shown on page load.">open</span><em>details</em></div>
+                        <div><span title="Indicates the optimal numeric value.">optimum</span><em>meter</em></div>
+                        <div><span title="Defines a regular expression which the element's value will be validated against.">pattern</span><em>input</em></div>
+                        <div><span title="Link notify trackping.">ping</span><em>a, area</em></div>
+                        <div><span title="Provides a hint to the user of what can be entered in the field.">placeholder</span><em>input, textarea</em></div>
+                        <div><span title="A URL indicating a poster frame to show until the user plays or seeks.">poster</span><em>video</em></div>
+                        <div><span title="Indicates whether the whole resource, parts of it or nothing should be preloaded.">preload</span><em>audio, video</em></div>
+                        <div><span title="A command element that belongs to a radiogroup.">radiogroup</span><em>command</em></div>
+                        <div><span title="Indicates whether the element can be edited.">readonly</span><em>input, textarea</em></div>
+                        <div><span title="Specifies the relationship of the target object to the link object.">rel</span><em>a, area, link</em></div>
+                        <div><span title="Indicates whether this element is required to fill out or not.">required</span><em>input, select, textarea</em></div>
+                        <div><span title="Indicates whether the list should be displayed in a descending order instead of a ascending.">reversed</span><em>ol</em></div>
+                        <div><span title="Defines the number of rows in a text area.">rows</span><em>textarea</em></div>
+                        <div><span title="Defines the number of rows a table cell should span over.">rowspan</span><em>td, th</em></div>
+                        <div><span title="An iframe with extra restriction.">sandbox</span><em>iframe</em></div>
+                        <div><span title="Defines a value which will be selected on page load.">selected</span><em>option</em></div>
+                        <div><span title="Defines the width of the element (in pixels). If the element's type attribute is text or password then it's the number of characters.">size</span><em>input, select</em></div>
+                        <div><span title="Assigns a slot in a shadow DOM shadow tree to an element.">slot</span><em>Global attribute</em></div>
+                        <div><span title="">span</span><em>col, colgroup</em></div>
+                        <div><span title="Indicates whether spell checking is allowed for the element.">spellcheck</span><em>Global attribute</em></div>
+                        <div><span title="The URL of the embeddable content.">src</span><em>audio, embed, iframe, img, input, script, source, track, video</em></div>
+                        <div><span title="Defines the first number if other than 1.">start</span><em>ol</em></div>
+                        <div><span title="An HTML form with an input field with a specified legal number intervals">step</span><em>input</em></div>
+                        <div><span title="Defines CSS styles which will override styles previously set.">style</span><em>Global attribute</em></div>
+                        <div><span title="Overrides the browser's default tab order and follows the one specified instead.">tabindex</span><em>Global attribute</em></div>
+                        <div><span title="Specifies where to open the linked document.">target</span><em>a, area, base, form</em></div>
+                        <div><span title="Text to be displayed in a tooltip when hovering over the element.">title</span><em>Global attribute</em></div>
+                        <div><span title="Defines the type of the element.">type</span><em>button, input, command, embed, object, script, source, style, menu</em></div>
+                        <div><span title="An image-map, with clickable areas.">usemap</span><em>img, input, object</em></div>
+                        <div><span title="Defines a default value which will be displayed in the element on page load.">value</span><em>button, option, input, li, meter, progress, param</em></div>
+                        <div><span title="For the elements listed here, this establishes the element's width. Note: For all other instances, such as DIV, this is a legacy attribute, in which case the CSS width property should be used instead.">width</span><em>canvas, embed, iframe, img, input, object, video</em></div>
+                        <div><span title="Indicates whether the text should be wrapped.">wrap</span><em>textarea</em></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="masonryPanelWrap noPencil">
+               <div class="masonryPanel">
+                  <h2>Blank Page<span>💭</span></h2>
+                  <div class="panelHelper">The syntax for an empty HTML page.</div>
+                  <div class="panelInner">
+                     <pre><span style="color:#1c02ff">&lt;!<span style="color:#1c02ff"><span style="font-weight:700">DOCTYPE</span> html</span>&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">html</span> <span style="font-style:italic">lang</span>=<span style="color:#d80800">"en"</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">head</span>&gt;</span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">meta</span> <span style="font-style:italic">charset</span>=<span style="color:#d80800">"utf-8"</span>&gt;</span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">title</span>&gt;</span>Page Title<span style="color:#1c02ff">&lt;/<span style="font-weight:700">title</span>&gt;</span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">meta</span> <span style="font-style:italic">name</span>=<span style="color:#d80800">"description"</span> <span style="font-style:italic">content</span>=<span style="color:#d80800">"Roughly 155 characters"</span>&gt;</span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">link</span> <span style="font-style:italic">rel</span>=<span style="color:#d80800">"stylesheet"</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"text/css"</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"mystyle.css"</span>&gt;</span>
+    &lt;<span style="font-weight:700;color: #1c02ff;">script</span> <span style="font-style:italic">src</span>=<span style="color:#d80800">"https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"</span>&gt;<span style="color: #1c02ff;">&lt;/<span style="font-weight:700;">script</span>&gt;</span>
+    &lt;<span style="font-weight:700;color: #1c02ff;">script</span> <span style="font-style:italic">src</span>=<span style="color:#d80800">"script.js"</span>&gt;<span style="color: #1c02ff;">&lt;/<span style="font-weight:700">script</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;/<span style="font-weight:700">head</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">body</span>&gt;</span>
+    <span style="color:#00b418">&lt;!-- Content --&gt;</span>
+  <span style="color:#1c02ff">&lt;/<span style="font-weight:700">body</span>&gt;</span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">html</span>&gt;</span>
+</pre>
+                  </div>
+               </div>
+            </div>
+            <div class="masonryPanelWrap noPencil">
+               <div class="masonryPanel">
+                  <h2>.htaccess<span>⚙</span></h2>
+                  <div class="panelInner">
+                     <h4>Force HTTPS</h4>
+                     <pre>RewriteEngine on
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}</pre>
+                     <h4>Force www</h4>
+                     <pre>RewriteEngine on
+RewriteCond %{HTTP_HOST} ^<span style="color:#d80800">html6\.com</span> [NC]
+RewriteRule ^(.*)$ http://www.<span style="color:#d80800">html6.com</span>/$1 [L,R=301,NC]</pre>
+                     <h4>Force non-www</h4>
+                     <pre>RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.<span style="color:#d80800">html6\.com</span> [NC]
+RewriteRule ^(.*)$ http://<span style="color:#d80800">html6.com</span>/$1 [L,R=301]</pre>
+                     <h4>Custom Error Pages</h4>
+                     <pre>ErrorDocument 500 "Sorry, something went wrong!"
+ErrorDocument 401 <span style="color:#d80800">https://html6.com/404/</span>
+ErrorDocument 404 <span style="color:#d80800">404error.html</span></pre>
+                     <h4>Redirect Entire Site</h4>
+                     <pre>Redirect 301 / <span style="color:#d80800">https://html6.com/</span></pre>
+                     <h4>Permanent Page Redirect</h4>
+                     <pre>Redirect 301 <span style="color:#d80800">/oldlink.html https://html6.com/help/</span>
+Redirect 301 <span style="color:#d80800">/oldlink https://html6.com/about/</span></pre>
+                     <h4>Alias Directory</h4>
+                     <pre>RewriteEngine On
+RewriteRule ^<span style="color:#d80800">source_directory</span>/(.*) <span style="color:#d80800">target_directory</span>/$1</pre>
+                     <h4>Remove .php Extension</h4>
+                     <pre>RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^([^.]+)$ $1.php [NC,L]</pre>
+                     <h4>Block IP Address</h4>
+                     <pre>Order deny,allow
+Allow from all
+Deny from <span style="color:#d80800">123.123.123.123</span>
+Deny from <span style="color:#d80800">123.123.123.123</span></pre>
+                     <h4>Allow Access From Only One IP</h4>
+                     <pre># Require all denied
+# Require ip <span style="color:#d80800">123.123.123.123</span></pre>
+                  </div>
+               </div>
+            </div>
+            <div class="masonryPanelWrap noPencil">
+               <div class="masonryPanel">
+                  <h2>Robots.txt<span>🤖</span></h2>
+                  <div class="panelHelper">Place the content in the robots.txt file in the root of a website. </div>
+                  <div class="panelInner">
+                     <h4>Example</h4>
+                     <pre>User-agent: *
+Disallow: /dont-index-this-folder/
+Sitemap: https://htmlcheatsheet.com/sitemap.xml</pre>
+                     <h4>Ban all robots</h4>
+                     <pre>User-agent: *
+Disallow: /</pre>
+                  </div>
+               </div>
+            </div>
+            <div class="masonryPanelWrap noPencil">
+               <div class="masonryPanel">
+                  <h2>Head Tags<span>👦</span></h2>
+                  <div class="panelHelper">Recommended tags for the header section, <br>including open graph. </div>
+                  <div class="panelInner">
+                     <pre style="color: #000;"><span style="color: #000;">&lt;!doctype html&gt;</span>
+<span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">html</span> <span style="font-style: italic;">lang</span>=<span style="color: #d80800;">"en"</span> <span style="font-style: italic;">class</span>=<span style="color: #d80800;">"no-js"</span>&gt;</span>
+ <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">head</span>&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">charset</span>=<span style="color: #d80800;">"utf-8"</span>&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">http-equiv</span>=<span style="color: #d80800;">"x-ua-compatible"</span> <span style="font-style: italic;">content</span>=<span style="color: #d80800;">"ie=edge"</span>&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">name</span>=<span style="color: #d80800;">"viewport"</span> <span style="font-style: italic;">content</span>=<span style="color: #d80800;">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">link</span> <span style="font-style: italic;">rel</span>=<span style="color: #d80800;">"canonical"</span> <span style="font-style: italic;">href</span>=<span style="color: #d80800;">"https://htmlcheatsheet.com/"</span> /&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">title</span>&gt;</span>HTML Cheat Sheet<span style="color: #1c02ff;">&lt;/<span style="font-weight: bold;">title</span>&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">name</span>=<span style="color: #d80800;">"description"</span> <span style="font-style: italic;">content</span>=<span style="color: #d80800;">"A brief page description"</span>&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">name</span>=<span style="color: #d80800;">"keywords"</span> <span style="font-style: italic;">content</span>=<span style="color: #d80800;">"html,cheatsheet"</span> /&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">property</span>=<span style="color: #d80800;">"fb:admins"</span> <span style="font-style: italic;">content</span>=<span style="color: #d80800;">"YourFacebookUsername"</span> /&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">property</span>=<span style="color: #d80800;">"og:title"</span> <span style="font-style: italic;">content</span>=<span style="color: #d80800;">"HTML Cheat Sheet"</span> /&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">property</span>=<span style="color: #d80800;">"og:type"</span> <span style="font-style: italic;">content</span>=<span style="color: #d80800;">"website"</span> /&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">property</span>=<span style="color: #d80800;">"og:url"</span> <span style="font-style: italic;">content</span>=<span style="color: #d80800;">"https://htmlcheatsheet.com/"</span> /&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">property</span>=<span style="color: #d80800;">"og:image"</span> <span style="font-style: italic;">content</span>=<span style="color: #d80800;">"https://htmlcheatsheet.com/images/html-cheatsheet.jpg"</span> /&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">property</span>=<span style="color: #d80800;">"og:description"</span> <span style="font-style: italic;">content</span>=<span style="color: #d80800;">"A brief page description"</span> /&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">link</span> <span style="font-style: italic;">rel</span>=<span style="color: #d80800;">"apple-touch-icon"</span> <span style="font-style: italic;">href</span>=<span style="color: #d80800;">"apple-touch-icon.png"</span>&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">link</span> <span style="font-style: italic;">rel</span>=<span style="color: #d80800;">"alternate"</span> <span style="font-style: italic;">hreflang</span>=<span style="color: #d80800;">"es"</span> <span style="font-style: italic;">href</span>=<span style="color: #d80800;">"https://htmlcheatsheet.com/spanish/"</span> /&gt;</span>
+  <span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">link</span> <span style="font-style: italic;">rel</span>=<span style="color: #d80800;">"stylesheet"</span> <span style="font-style: italic;">href</span>=<span style="color: #d80800;">"/styles.css"</span>&gt;</span>
+  &lt;<span style="font-weight: bold; color: #1c02ff;">script</span> <span style="font-style: italic; color: #1c02ff;">src</span>=<span style="color: #d80800;">"/script.js"</span>&gt;<span style="font-weight: bold; color: #1c02ff;">&lt;/script&gt;</span>
+ <span style="color: #1c02ff;">&lt;/<span style="font-weight: bold;">head</span>&gt;</span>
+</pre>
+                  </div>
+               </div>
+            </div>
+            <div class="masonryPanelWrap">
+               <div class="masonryPanel">
+                  <h2>HTML5 Page Structure<span>⚗</span></h2>
+                  <div class="panelHelper">HTML5 sectioning elements </div>
+                  <div class="panelInner">
+                     <h4>header, nav, main, article, section, aside, footer, address</h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">header</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">div</span> <span style="font-style:italic">id</span>=<span style="color:#d80800">"logo"</span>&gt;</span>HTML<span style="color:#1c02ff">&lt;/<span style="font-weight:700">div</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">nav</span>&gt;</span>  
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">ul</span>&gt;</span>
+      <span style="color:#1c02ff">&lt;<span style="font-weight:700">li</span>&gt;</span><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"/"</span>&gt;</span>Home<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>&gt;</span>
+      <span style="color:#1c02ff">&lt;<span style="font-weight:700">li</span>&gt;</span><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"/link"</span>&gt;</span>Page<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>&gt;</span>
+    <span style="color:#1c02ff">&lt;/<span style="font-weight:700">ul</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;/<span style="font-weight:700">nav</span>&gt;</span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">header</span>&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">main</span> <span style="font-style:italic">role</span>=<span style="color:#d80800">"main"</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">article</span>&gt;</span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">h2</span>&gt;</span>Title 1<span style="color:#1c02ff">&lt;/<span style="font-weight:700">h2</span>&gt;</span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">p</span>&gt;</span>Content 1<span style="color:#1c02ff">&lt;/<span style="font-weight:700">p</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;/<span style="font-weight:700">article</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">article</span>&gt;</span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">h2</span>&gt;</span>Title 2<span style="color:#1c02ff">&lt;/<span style="font-weight:700">h2</span>&gt;</span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">p</span>&gt;</span>Content 2<span style="color:#1c02ff">&lt;/<span style="font-weight:700">p</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;/<span style="font-weight:700">article</span>&gt;</span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">main</span>&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">section</span>&gt;</span>
+  A group of related content
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">section</span>&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">aside</span>&gt;</span>
+  Sidebar
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">aside</span>&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">footer</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">p</span>&gt;</span><span style="color:#c5060b;font-style:italic">&amp;copy;</span> HTML Cheat Sheet<span style="color:#1c02ff">&lt;/<span style="font-weight:700">p</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">address</span>&gt;</span>
+    Contact <span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"mailto:me@html6.com"</span>&gt;</span>me<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>&gt;</span>
+  <span style="color:#1c02ff">&lt;/<span style="font-weight:700">address</span>&gt;</span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">footer</span>&gt;</span>
+</pre>
+                  </div>
+               </div>
+            </div>
+            <div class="masonryPanelWrap noPencil">
+               <div class="masonryPanel">
+                  <h2>Open Graph<span>📉</span></h2>
+                  <div class="panelHelper">Social media header tags. </div>
+                  <div class="panelInner">
+                     <pre style="color: #000;">&lt;!doctype html&gt;
+<span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">html</span> <span style="font-style: italic;">xmlns:og</span>=<span style="color: #d80800;">"http://ogp.me/ns#"</span>&gt;</span>
+<span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">head</span>&gt;</span>
+<span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">title</span>&gt;</span>The Rock (1996)<span style="color: #1c02ff;">&lt;/<span style="font-weight: bold;">title</span>&gt;</span>
+<span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">property</span>=<span style="color: #d80800;">"og:title"</span> <span style="font-style: italic;">content</span>=<span style="color: #d80800;">"Cheat Sheet"</span> /&gt;</span>
+<span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">property</span>=<span style="color: #d80800;">"og:type"</span> <span style="font-style: italic;">content</span>=<span style="color: #d80800;">"website"</span> /&gt;</span>
+<span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">property</span>=<span style="color: #d80800;">"og:url"</span> <span style="font-style: italic;">content</span>=<span style="color: #d80800;">"https://htmlcheatsheet.com/"</span> /&gt;</span>
+<span style="color: #1c02ff;">&lt;<span style="font-weight: bold;">meta</span> <span style="font-style: italic;">property</span>=<span style="color: #d80800;">"og:image"</span> <span style="font-style: italic;">content</span>=<span style="color: #d80800;">"https://htmlcheatsheet.com/demo.jpg"</span> /&gt;</span>
+</pre>
+                     <h4>Optional</h4>
+                     <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">meta</span> <span style="font-style:italic">property</span>=<span style="color:#d80800">"og:audio"</span> <span style="font-style:italic">content</span>=<span style="color:#d80800">"https://htmlcheatsheet.com/track.mp3"</span> /&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">meta</span> <span style="font-style:italic">property</span>=<span style="color:#d80800">"og:description"</span> <span style="font-style:italic">content</span>=<span style="color:#d80800">"A brief description"</span> /&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">meta</span> <span style="font-style:italic">property</span>=<span style="color:#d80800">"og:determiner"</span> <span style="font-style:italic">content</span>=<span style="color:#d80800">"the"</span> /&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">meta</span> <span style="font-style:italic">property</span>=<span style="color:#d80800">"og:locale"</span> <span style="font-style:italic">content</span>=<span style="color:#d80800">"en_US"</span> /&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">meta</span> <span style="font-style:italic">property</span>=<span style="color:#d80800">"og:locale:alternate"</span> <span style="font-style:italic">content</span>=<span style="color:#d80800">"es_ES"</span> /&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">meta</span> <span style="font-style:italic">property</span>=<span style="color:#d80800">"og:site_name"</span> <span style="font-style:italic">content</span>=<span style="color:#d80800">"HTML Cheat Sheet"</span> /&gt;</span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">meta</span> <span style="font-style:italic">property</span>=<span style="color:#d80800">"og:video"</span> <span style="font-style:italic">content</span>=<span style="color:#d80800">"https://htmlcheatsheet.com/video.swf"</span> /&gt;</span>
+</pre>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a id="editorsAnchor" href="htmlcheatsheet.html"></a>
+         <div id="layover">
+         </div>
+         <div id="wrapPreviews" class="clearfix">
+            <div class="sourceEditorWrap">
+               <div class="editorHeader"><abbr title="Real-Time Source Code Editor">HTML</abbr></div>
+               <div id="sourceFieldecske"></div>
+               <script>
+                  var sourceEditorFricc = CodeMirror(document.getElementById("sourceFieldecske"), {
+                  	value: "",
+                  	lineNumbers: true,
+                  	styleActiveLine: true,
+                  	mode: "text/html",
+                  	lineWrapping: true,
+                  	matchTags: {bothTags: true},
+                    });		
+                  sourceEditorFricc.on("change", function() {
+                  	inputChanged();
+                    });
+               </script>
+            </div>
+            <div class="cssEditorWrap">
+               <div class="editorHeader"><abbr title="Style Sheets">CSS</abbr></div>
+               <div id="cssCodeFieldecske"></div>
+               <script>
+                  var cssEditorFricc = CodeMirror(document.getElementById("cssCodeFieldecske"), {
+                  	value: "",
+                  	lineNumbers: true,
+                  	styleActiveLine: true,
+                  	lineWrapping: true,
+                  	mode: "text/css",
+                  	matchTags: {bothTags: true},
+                    });
+               </script>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
