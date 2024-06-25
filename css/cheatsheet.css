@@ -2208,6 +2208,11 @@ a.homeMenu:hover {
 	}
 }
 
+.bodyTagTD{
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center;
+}
 @media (prefers-color-scheme:dark) {
 	#pagewrap {
 		background: #e0e0e0
